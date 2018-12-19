@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Implementation on OWASP SAMM</title>
+    <link>https://owaspsamm.org/business_functions/implementation/</link>
+    <description>Recent content in Implementation on OWASP SAMM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://owaspsamm.org/business_functions/implementation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Secure Build</title>
+      <link>https://owaspsamm.org/core/implementation/i-secure-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/implementation/i-secure-build/</guid>
+      <description>Short Description Long Description Overview     A: Build Process B: Software Supply Chain     Maturity 1 - Build process is repeatable and consistent The build process is defined and consistent. All application dependencies are identified and documented   Maturity 2 - Build process is optimized and fully integrated into the workflow The build process is fully automated and does not require intervention by the developer.</description>
+    </item>
+    
+    <item>
+      <title>Secure Deployment</title>
+      <link>https://owaspsamm.org/core/implementation/i-secure-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/implementation/i-secure-deployment/</guid>
+      <description>Short Description Long Description Overview     A: Deployment Process B: Secret Management     Maturity 1 - Deployment processes are fully documented Deployment is automated or done by someone other than the developer. Production secrets are encrypted and not handled by developers   Maturity 2 - Deployment processes include security verification milestores Integration of security verification in deployment (e.g. binary static code analysis / AV scan) Secrets are dynamically included during the deployment process   Maturity 3 - Deployment process is fully automated and incorporates automated verification of all critical milestones Integrity of the code is verified prior to deployment Files and repositories and checked periodically for secrets that should be protected    A: Deployment Process Maturity 1 Benefits Activity Applications are deployed via automated processes, or manually by persons other than the developers.</description>
+    </item>
+    
+    <item>
+      <title>Defect Management</title>
+      <link>https://owaspsamm.org/core/implementation/i-defect-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/implementation/i-defect-management/</guid>
+      <description>Overview     A: Defect Tracking (Flaws/Bugs/Process) B: Metrics and Feedback/Learning     Maturity 1 - All defects are tracked within each project Track all defects Calculate and share basic metrics, such as total counts   Maturity 2 - Defect tracking used to influence the deployment process Assign SLA based on security rating of the defect Calculate more advanced metrics that include new issue velocity, remediation speed metrics, and trends.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Defect Management - OWASP SAMM</title>
+  
+  <meta name="description" content="Overview     A: Defect Tracking (Flaws/Bugs/Process) B: Metrics and Feedback/Learning     Maturity 1 - All defects are tracked within each project Track all defects Calculate and share basic metrics, such as total counts   Maturity 2 - Defect tracking used to influence the deployment process Assign SLA based on security rating of the defect Calculate more advanced metrics that include new issue velocity, remediation speed metrics, and trends.">
+  <meta name="author" content="">
+  
+  <link href="/css/semantic.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+  <meta name="generator" content="Hugo">
+  
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" title="OWASP SAMM">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127457120-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127457120-1');
+  </script>
+</head>
+<body class="single">
+  <header class="ui container">
+    <h1 class="ui header">
+      <div class="content">
+        OWASP SAMM
+        <div class="sub header">Software Assurance Maturity Model</div>
+      </div>
+    </h1>
+  </header>
+  <main class="ui container">
+
+
+<h1 class="ui huge dividing header">
+  Defect Management
+</h1>
+
+<div class="ui buttons">
+  <a href="/" class="ui green button"><i class="hand point left icon"></i> Back</button>
+  <a href="https://github.com/OWASP/samm/edit/master/v2.0/beta/core/implementation/i-defect-management.md" class="ui blue button"><i class="pencil icon"></i> Edit this page</a>
+</div>
+
+<div class="ui hidden divider"></div>
+
+<div class="ui large labels">
+  <div class="ui green label">
+    Business function
+    <div class="detail">Implementation</div>
+  </div>
+  <div class="ui orange label">
+    Assigned to
+    <div class="detail">Chris Cooper (chris.cooper@owasp.org)</div>
+  </div>
+  
+  <div class="ui label">
+    Progress
+    <div class="detail"><span class="donut">0/100</span> 0%</div>
+  </div>
+  
+</div>
+
+
+
+<h1 id="overview">Overview</h1>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">A: Defect Tracking (Flaws/Bugs/Process)</th>
+<th align="left">B: Metrics and Feedback/Learning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Maturity 1 - All defects are tracked within each project</td>
+<td align="left">Track all defects</td>
+<td align="left">Calculate and share basic metrics, such as total counts</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 2 - Defect tracking used to influence the deployment process</td>
+<td align="left">Assign SLA based on security rating of the defect</td>
+<td align="left">Calculate more advanced metrics that include new issue velocity, remediation speed metrics, and trends.</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 3 - Defect tracking across multiple components is used to help reduce the number of new defects</td>
+<td align="left">Measure and enforce compliance with the SLA</td>
+<td align="left">Use trend analysis to influence changes in the Design and Implementation phase across multiple projects.</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="a-defect-tracking-flaws-bugs-process">A: Defect Tracking (Flaws/Bugs/Process)</h1>
+
+<h2 id="maturity-1">Maturity 1</h2>
+
+<h3 id="activity">Activity</h3>
+
+<p>Any and all security defects should be recorded and tracked in a central location. Defects should be assigned meaningful categories, and should be prioritised based on the risk they pose.</p>
+
+<p>Sources of defects should include, but not be limited to, those discovered via:</p>
+
+<ul>
+<li>Threat assessments</li>
+<li>Developers during self or peer code review</li>
+<li>Static analysis</li>
+<li>Dynamic analysis</li>
+<li>Vulnerability scans</li>
+<li>Penetration testing</li>
+<li>Malware scans</li>
+<li>Public/private vulnerability disclosures (e.g. for 3rd party libraries)</li>
+<li>Bug bounties</li>
+</ul>
+
+<p>Manageability should be considered. Within reason, it should possible to avoid duplicate defects being recorded (i.e. it should be easy to browse/search for similar issues). Defects that are duplicates should be merged. Issues that are very similar, particularly if they are remediated in the same way, could be grouped together.</p>
+
+<h4 id="maturity-questions">Maturity Questions</h4>
+
+<h5 id="q-1">Q 1</h5>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h4 id="notes">Notes</h4>
+
+<p>&ldquo;Any and all security defects should be recorded and tracked in a central location.&rdquo; - does this matter on level 1? Aggregate this per team/product? Not as an organisation. to be rephrased.<br />
+Should only be &ldquo;validated or qualified&rdquo; defects.
+vulnerability reports and scans should be input for this .
+security defect management includes vulnerability management
+fixing is implicitly implied in this stream</p>
+
+<h4 id="guidance">Guidance</h4>
+
+<h2 id="maturity-2">Maturity 2</h2>
+
+<h3 id="activity-1">Activity</h3>
+
+<p>There is a well defined threshold for defects that require resolution and/or mitigation. Where this threshold is exceeded, the intention should be that the software is not deployed into production until the relevant defects are fixed, or fall below the threshold.</p>
+
+<p>Organisations should set a threshold that is right for them. It might take into consideration:</p>
+
+<ul>
+<li>the threat model</li>
+<li>the nature of applicable threats (i.e. skill level, motive, level of access, etc)</li>
+<li>how difficult it would be to find and exploit the issue</li>
+<li>potential impact to confidentiality, integrity, availability</li>
+<li>potential impact to the business</li>
+</ul>
+
+<p>Organisations should look to use a well established risk rating methodology consistently across their defect management solution.</p>
+
+<p>Relevant persons should be notified if a defect is raised that exceeds the defined threshold, and action should be taken to resolve or mitigate the issue before the software is deployed into a production environment. A satisfactory mitigation is one that reduces the risk to fall below the threshold.</p>
+
+<p>Processes should be defined for dealing with defects that are deemed as false positives, or have existing compensating controls. In other words, some defects might be identified which - at face value - exceed the threshold, but should not prevent the software from being deployed. This might be because they are false positives and have therefore been misreported, or because there are existing mitigations that had not been taken into consideration. Such defects should still be recorded somewhere for accountability purposes.</p>
+
+<p>Defects below the threshold might be deployed into production environments, but these should still be considered for resolution or mitigation at a later time.</p>
+
+<h3 id="maturity-questions-1">Maturity Questions</h3>
+
+<h4 id="q-1-1">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h4 id="notes-1">Notes</h4>
+
+<p>is the quality gate only deployment?<br />
+definition and agreement of the &ldquo;threshold&rdquo; and related timelines is part of this maturity level activity
+severity level should be included in the threshold ?
+add locations here as well
+add consistent risk levels</p>
+
+<h4 id="guidance-1">Guidance</h4>
+
+<h2 id="maturity-3">Maturity 3</h2>
+
+<h3 id="activity-2">Activity</h3>
+
+<p>An individual or team outside of those responsible for developing and deploying the software (e.g. an information security officer) should be responsible for managing known defects and enforcing the threshold defined at maturity 2.</p>
+
+<p>Defects that exceed the threshold should block or prevent deployment into production, until they are resolved, or fall below the threshold. This could be achieved automatically in the build and deployment processes, if they are integrated with the defect management system. Alternatively, the deployment process could include a step that requires approval from an information security officer.</p>
+
+<p>More emphasis is placed on maintaining the list of known defects, and ensuring that their risk rating and categorisations remain accurate over time (e.g. in-line with new research and changing opinions within the industry, as well as other factors like the improving capabilities of some adversaries).</p>
+
+<p>This includes managing lists of defects that have been accepted, mitigated, or marked as a false positives. Accepted and mitigated risks should be reconsidered periodically to ensure that they are suitable to keep their statuses (e.g. to identify a defect that now poses a greater risk because a mitigating control has been changed or removed).</p>
+
+<h3 id="maturity-questions-2">Maturity Questions</h3>
+
+<h4 id="q-1-2">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h4 id="notes-2">Notes</h4>
+
+<p>add locations here as well</p>
+
+<h4 id="guidance-2">Guidance</h4>
+
+<h1 id="b-metrics-and-feedback-learning">B: Metrics and Feedback/Learning</h1>
+
+<h2 id="maturity-1-1">Maturity 1</h2>
+
+<h3 id="activity-3">Activity</h3>
+
+<p>Calculate and share basic information about defects, and use this data to make decisions about remediation. Basic information might include:</p>
+
+<ul>
+<li>the total number of defects</li>
+<li>the software components the defect resides in</li>
+<li>the type / category of the defect</li>
+<li>the severity of the defect</li>
+</ul>
+
+<p>Use this data to inform your decision-making in terms of remediation priority, and training requirements (i.e. secure development).</p>
+
+<h3 id="maturity-questions-3">Maturity Questions</h3>
+
+<h4 id="q-1-3">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h4 id="notes-3">Notes</h4>
+
+<p>first align on objectives of these metrics and flesh out overlap with BG Governance.<br />
+add mean time to fix here?</p>
+
+<p>levels?
+1: provide feedback to the team
+2: learn from it accross teams and provide feedback to the organisations, looking for trends
+3: optimized practices and share statictics</p>
+
+<h4 id="guidance-3">Guidance</h4>
+
+<h2 id="maturity-2-1">Maturity 2</h2>
+
+<h3 id="activity-4">Activity</h3>
+
+<p>Calculate and share more advanced metrics. These might include:</p>
+
+<ul>
+<li>Formal risk ratings that consider likelihood and impact</li>
+<li>Number of open vulnerabilities above a defined threshold in terms of severity or risk</li>
+<li>Risk per software component / product / project / business unit</li>
+<li>Amount of accepted risk</li>
+<li>Time to detect vulnerabilities</li>
+<li>Time to resolve vulnerabilities</li>
+<li>Window of exposure where vulnerabilities are detected on live systems</li>
+<li>Coverage of software components by verification tests</li>
+<li>Number of regressions / reopened vulnerabilities</li>
+</ul>
+
+<p>This data should be available in an accessible way to management, information security persons, developers and engineers who may use it to inform their decision-making. For example, a central dashboard might be provided.</p>
+
+<h3 id="maturity-questions-4">Maturity Questions</h3>
+
+<h4 id="q-1-4">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h4 id="notes-4">Notes</h4>
+
+<p>learn from the metrics
+identify patterns<br />
+getting more granular
+enhance trainings, libraries, &hellip;
+describe the type of lessons learned and put more emphasis on this</p>
+
+<h4 id="guidance-4">Guidance</h4>
+
+<h2 id="maturity-3-1">Maturity 3</h2>
+
+<h3 id="activity-5">Activity</h3>
+
+<p>Ensure that defects are complimented with a range of fields, such as:</p>
+
+<ul>
+<li>Category</li>
+<li>CVE / CWE</li>
+<li>Software component</li>
+<li>Business unit</li>
+<li>Exploitability</li>
+<li>Impact</li>
+<li>Risk</li>
+<li>CVSS</li>
+</ul>
+
+<p>Use these fields to look for trends in new defects as they are raised. Graph and search for trends across various timespans such as a week, a month, and a year.</p>
+
+<p>Analyse these trends continually and leverage the findings to influence the design and implementation of software.</p>
+
+<h3 id="maturity-questions-5">Maturity Questions</h3>
+
+<h4 id="q-1-5">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h4 id="notes-5">Notes</h4>
+
+<p>accross multiple projects/teams
+put more focus on the feedback part
+change the SDLC</p>
+
+<h4 id="guidance-5">Guidance</h4>
+
+
+<div class="ui section divider"></div>
+<footer class="ui container footer">
+  <div class="ui stackable grid">
+    <div class="ui three wide column">
+      <a href="https://www.owasp.org/"><img class="ui fluid image" src="/img/owasp.png" /></a>
+    </div>
+    <div class="ui thirteen wide column">
+      <h3 class="ui blue sub header">This is an OWASP Project</h3>
+      <p>OWASP is an international organization and the OWASP Foundation supports OWASP efforts around the world. OWASP is an open community dedicated to enabling organizations to conceive, develop, acquire, operate, and maintain applications that can be trusted. All of the OWASP tools, documents, forums, and chapters are free and open to anyone interested in improving application security. We advocate approaching application security as a people, process, and technology problem because the most effective approaches to application security include improvements in all of these areas. We can be found at <a href="https://www.owasp.org/">https://www.owasp.org/</a>.</p>
+    </div>
+  </div>
+  <div class="ui stackable grid">
+    <div class="ui three wide column">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img class="ui fluid image" src="/img/by-sa.png" /></a>
+    </div>
+    <div class="ui thirteen wide column">
+      <h3 class="ui blue sub header">CC BY-SA 4.0</h3>
+      <p>This work is licensed under the Creative Commons Attribution-Share Alike 4.0 License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>.</p>
+    </div>
+  </div>
+</footer>
+<script src="/js/semantic.min.js" data-no-instant></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" data-no-instant></script>
+<script src="/js/jquery.peity.min.js" data-no-instant></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.donut').peity('donut');
+  });
+</script>
+</body>
+</html>
+

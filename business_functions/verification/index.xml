@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Verification on OWASP SAMM</title>
+    <link>https://owaspsamm.org/business_functions/verification/</link>
+    <description>Recent content in Verification on OWASP SAMM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://owaspsamm.org/business_functions/verification/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Architecture Assessment</title>
+      <link>https://owaspsamm.org/core/verification/v-architecture-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/verification/v-architecture-assessment/</guid>
+      <description>Short Description Long Description Overview (updated objectives)     A: Architecture Validation B: Architecture Compliance     Maturity 1 - Review the architecture to ensure baseline mitigations are in place for known risks. Identify application and infrastructure architecture components Ad-hoc review of the architecture against compliance requirement   Maturity 2 - Review the complete provision of security mechanisms in the architecture Are the architecture security mechanisms well implemented Analyze the architecture against known security requirements and best practices   Maturity 3 - Review the architecture effectiveness and feedback results to improve the security architecture Review of the architecture components effectiveness Feedback the architecture review results into the enterprise architecture, organisation design principles &amp;amp; patterns, security solutions and reference architectures    Original Overview     A: Application Architecture B: Supporting Architecture     Maturity 1 - Support ad-hoc reviews of software design to ensure baseline mitigations for known risks.</description>
+    </item>
+    
+    <item>
+      <title>Requirements Driven Testing</title>
+      <link>https://owaspsamm.org/core/verification/v-requirements-driven-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/verification/v-requirements-driven-testing/</guid>
+      <description>Short Description Create and integrate both positive (control verification) and negative (misuse/abuse testing) security tests based on requirements (user stories).
+Long Description Conduct positive and negative security tests to verify that the software operates as expected. At a minimum, this means both testing the correct functioning of the standard software security controls, and fuzzing for vulnerabilities against the main input parameters of the application.
+From the known security requirements, identify and implement a set of security test cases to check the software for correct functionality.</description>
+    </item>
+    
+    <item>
+      <title>Security Testing</title>
+      <link>https://owaspsamm.org/core/verification/v-security-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/verification/v-security-testing/</guid>
+      <description>Short Description Basic security issues are detected and fixed by the development team through automation, allowing manual testing to focus on more complex attack vectors.
+Long Description With manual and automated security tests, projects within the organization should routinely run security tests and review results during development and deployment. Basic security issues are detected and fixed through scalable automation, where manual security testing should focus on more complex attack vectors with deeper understanding of the software.</description>
+    </item>
+    
+  </channel>
+</rss>

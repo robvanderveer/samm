@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Secure Build - OWASP SAMM</title>
+  
+  <meta name="description" content="Short Description Long Description Overview     A: Build Process B: Software Supply Chain     Maturity 1 - Build process is repeatable and consistent The build process is defined and consistent. All application dependencies are identified and documented   Maturity 2 - Build process is optimized and fully integrated into the workflow The build process is fully automated and does not require intervention by the developer.">
+  <meta name="author" content="">
+  
+  <link href="/css/semantic.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+  <meta name="generator" content="Hugo">
+  
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" title="OWASP SAMM">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127457120-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127457120-1');
+  </script>
+</head>
+<body class="single">
+  <header class="ui container">
+    <h1 class="ui header">
+      <div class="content">
+        OWASP SAMM
+        <div class="sub header">Software Assurance Maturity Model</div>
+      </div>
+    </h1>
+  </header>
+  <main class="ui container">
+
+
+<h1 class="ui huge dividing header">
+  Secure Build
+</h1>
+
+<div class="ui buttons">
+  <a href="/" class="ui green button"><i class="hand point left icon"></i> Back</button>
+  <a href="https://github.com/OWASP/samm/edit/master/v2.0/beta/core/implementation/i-secure-build.md" class="ui blue button"><i class="pencil icon"></i> Edit this page</a>
+</div>
+
+<div class="ui hidden divider"></div>
+
+<div class="ui large labels">
+  <div class="ui green label">
+    Business function
+    <div class="detail">Implementation</div>
+  </div>
+  <div class="ui orange label">
+    Assigned to
+    <div class="detail">Chris Cooper (chris.cooper@owasp.org)</div>
+  </div>
+  
+  <div class="ui label">
+    Progress
+    <div class="detail"><span class="donut">40/100</span> 40%</div>
+  </div>
+  
+</div>
+
+
+
+<h1 id="short-description">Short Description</h1>
+
+<h1 id="long-description">Long Description</h1>
+
+<h1 id="overview">Overview</h1>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">A: Build Process</th>
+<th align="left">B: Software Supply Chain</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Maturity 1 - Build process is repeatable and consistent</td>
+<td align="left">The build process is defined and consistent.</td>
+<td align="left">All application dependencies are identified and documented</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 2 - Build process is optimized and fully integrated into the workflow</td>
+<td align="left">The build process is fully automated and does not require intervention by the developer.</td>
+<td align="left">All components and libraries are periodically reviewed for known security vulnerabilities and licensing issues</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 3 - Build process helps prevent known defects from entering the production environment.</td>
+<td align="left">Security defects may trigger the build to stop executing</td>
+<td align="left">Components and libraries are independently scanned for vulnerabilities</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="a-build-process">A: Build Process</h1>
+
+<h2 id="maturity-1">Maturity 1</h2>
+
+<h3 id="benefit">Benefit</h3>
+
+<p>Consistent and repeatable builds help developers focus on application-specific issues, and make it possible to automate builds in the future. This reduces the likelihood of human error during builds which can lead to security vulnerabilities.</p>
+
+<h3 id="activity">Activity</h3>
+
+<p>The complete build process must be fully documented, broken down into clear stages that can be reproduced consistently. Following the build process should ideally not require any additional knowledge about the software - meaning that the documentation is complete and not open to interpretation.</p>
+
+<p>The documentation should not include any secrets (specifically considering those that would be needed during the build process). Access to build tools, environments and code repositories should be via individual credentials that authenticate, authorize and account where possible. Shared secrets, only where they cannot be avoided, should be managed with care, preferably via an encrypted password vault.</p>
+
+<p>A master copy of the build documentation should be kept in one central location that is accessible by all who require access. Avoid having multiple copies, some of which may not benefit from updated processes.</p>
+
+<p>All of the tools required for the build to succeed should be included in the documentation. These tools should be routinely reviewed to ensure that they are actively maintained (supported) and up-to-date with all security patches. Furthermore, each tool&rsquo;s configuration should be be hardened in-line with vendor or trusted third-party guidelines.</p>
+
+<p>The build process should include steps for signing the generated binaries / code with an appropriate certificate.</p>
+
+<h4 id="maturity-questions">Maturity Questions</h4>
+
+<h5 id="q-1">Q 1</h5>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4
+- Option 5</p>
+
+<h3 id="quality-indicators">Quality Indicators</h3>
+
+<ul>
+<li>A new build environment can be manually deployed by anyone following the documentation</li>
+</ul>
+
+<!--
+#### Notes
+Why is this benificial for software security? [Added by CC]
+
+Note for implementation: "Where it is reasonable to do so, implement static application security testing (SAST) to run as part of the build process. The results from these tests should be logged centrally and actioned as necessary." [Removed from activity by CC]
+
+Reproducable build? 
+How is integrity of the build software guaranteed with this activity? [Added to M3 by CC]
+
+Does "documented" imply a separate document. How about using "captured" instead. [Not changed - question of language we adopt across the board? CC]
+
+#### Guidance
+Provide examples of which security tools might fit here.  
+are there any others than SAST(?) - how about obfuscation toolings (e.g. mobile).
+
+-->
+
+<h2 id="maturity-2">Maturity 2</h2>
+
+<h3 id="benefit-1">Benefit</h3>
+
+<p>A fully automated build system allows easy integration of automated security checks at all stages of the build process, and ensures separate but consistent build environments.</p>
+
+<h3 id="activity-1">Activity</h3>
+
+<p>Implement the build process as an automated system, so that builds can be executed repeatedly and consistently. The process should be reliable and not require developer intervention, further reducing the likelihood of human error.</p>
+
+<p>Automation makes it easier to include security checks during the build process. Where it is reasonable to do so, implement static application security testing (SAST) to run as part of the build process. Refer to guidance in <a href="../v-security-testing">Verification &gt; Security Testing</a> &gt; A3.</p>
+
+<p>The use of an automated system increases the reliance placed on the build tools for security, and therefore maskes hardening and maintaining the toolset even more critical. Particular attention should be paid to the interfaces that such tools might expose, such as web-based portals and how they can be locked-down. The exposure of a build tool to the network could allow a malicious actor to tamper with the integrity of the process. This might, for example, allow malicious code to be built into software.</p>
+
+<p>The automated process may require access to credentials and secrets, such as the code signing certificate or access to repositories; secrets that are specifically required in order to build the software. These should be handled with care. Refer to <a href="i-secure-deployment">Implementation &gt; Secure Deployment</a> &gt; B.</p>
+
+<p>Ideally, handle code signing on a separate centralized server which does not expose the certificate to the system executing the build.</p>
+
+<h3 id="maturity-questions-1">Maturity Questions</h3>
+
+<h4 id="q-1-1">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-1">Quality Indicators</h3>
+
+<ul>
+<li>New build environments can be rapidly and easily deployed without specialist knowledge.</li>
+<li>The build environment itself is versioned and maintained as code in a repository.</li>
+<li>New security checks can be easily added to any stage of the build pipeline.</li>
+<li>The majority of regressions in production should also occur in a pre-production environment.</li>
+<li>Build and runtime secrets are handled via a standardised solution (e.g. secret vault)</li>
+<li>Developers cannot access secrets in the production environment</li>
+<li>Any developer access to the production environment is securely audited.</li>
+</ul>
+
+<h2 id="maturity-3">Maturity 3</h2>
+
+<h3 id="benefit-2">Benefit</h3>
+
+<p>A clear minimal security baseline can be enforced in production; compliant applications can be automtically deployed.</p>
+
+<h3 id="activity-2">Activity</h3>
+
+<p>The build process includes automated security checks which break the build if they fail. Static Application Security Testing (SAST), with an appropriate and custom ruleset, should be triggered each time the build process executes. Refer to guidance in <a href="../v-security-testing">Verification &gt; Security Testing</a> &gt; A.</p>
+
+<p>The organization should set an appropriate threshold for build failure based on the application&rsquo;s risk appetite. For instance, this might be vulnerabilities rated as &ldquo;High&rdquo; and &ldquo;Critical&rdquo;, or those with a CVSS score above 7.0. The types of vulnerabilities that the organization would consider to be unacceptable in a build and their typical scores/ratings should be considered when setting this threshold. An application with more sensitive functions might have a lower threshold, for instance. Vulnerabilities below the threshold should still trigger warnings and be logged into a centralized system to be tracked and actioned.</p>
+
+<p>Bear in mind that a mechanism to bypass this behaviour when a vulnerability has been accepted or mitigated will be necessary (to stop it from breaking the build), but should be carefully controlled and approved. All exceptions should be logged with a rationale.</p>
+
+<p>If any of the SAST or any other security tests could not be carried out successfully, the build should fail.</p>
+
+<p>If technical limitations prevent the organisation from breaking the build automatically for any reason, the same effect should be acheived via other means, such as a clear policy for the developer / engineer not to deploy or execute a build with defects meeting certain criteria.</p>
+
+<p>Take steps to verify the integrity of the build system, for example through a deterministic method that outputs byte-for-byte reproducable builds. Compare the binary output with that from other equivilent build systems to ensure it hasn&rsquo;t been tampered with.</p>
+
+<h3 id="maturity-questions-2">Maturity Questions</h3>
+
+<h4 id="q-1-2">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-2">Quality Indicators</h3>
+
+<ul>
+<li>Issues should be automatically created for security failures during the build (and testing) process, and assigned to the development team</li>
+<li>Regressions in production which did not get detected in pre-production are treated themselves as issues and investigated.</li>
+<li>//A process exists for managing accepted risks//. The idea here is to stop ignoring a vulnerability whose risk was temporarily accepted after the grace period expires (?)</li>
+<li>The build environment is maintained as project, complete with with regression tests.</li>
+<li>The build environment can be rolled back to the exact version used to build and test a particular release of an application.</li>
+<li>The build environment is regularly pentested similarly to applications.</li>
+</ul>
+
+<!--
+#### Notes
+lot of overlap/duplication with the security testing stream, to be revised. [Changed to references by CC]
+-->
+
+<h1 id="b-software-dependencies">B: Software Dependencies</h1>
+
+<h2 id="maturity-1-1">Maturity 1</h2>
+
+<h3 id="benefit-3">Benefit</h3>
+
+<h3 id="activity-3">Activity</h3>
+
+<p>Keep a record of all software dependencies utilized throughout the target application. This is sometimes referred to as a Bill of Materials (BOM). In building these records, consider the various locations where dependencies might be specified:
+- configuration files
+- the project&rsquo;s directory on disk
+- package management tool
+- code (e.g. via an IDE that supports listing dependencies)</p>
+
+<p>Consider that the different components and aspects of the application may consume entirely different dependencies. For example, if the software package is a web app, the server-side application code and client-side scripts both need to be covered.</p>
+
+<p>The records should ideally include the following information about each dependency:</p>
+
+<ul>
+<li>Where is it used / referenced?</li>
+<li>Why is it required?</li>
+<li>Version being used</li>
+<li>License</li>
+<li>Source information (link to repository, author&rsquo;s name, etc)</li>
+<li>Open source or proprietary</li>
+<li>Is the component supported / being actively maintained?</li>
+</ul>
+
+<p>The records should be checked, whenever it is practical to do so, to discover any dependencies with known vulnerabilities and update or replace them accordingly.</p>
+
+<p>The organization should endeavor to ensure that components are being actively maintained, and that security vulnerabilities are likely to be dealt with appropriately. Assurance should be gained, either through agreements with a commercial vendor, or other means when dealing with open source components. In the latter case, it may be evident whether the project is being actively maintained by looking at repository activity, and the developers&rsquo; reponses to security issues being raised by the community.</p>
+
+<h3 id="maturity-questions-3">Maturity Questions</h3>
+
+<h4 id="q-1-3">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-3">Quality Indicators</h3>
+
+<!--
+#### Notes
+- is "Software Supply Chain" to best title for this stream? [Changed to Software Dependencies by CC]
+- Make sure activities address Docker and other system-level dependencies that are part of infrastructure as code. [I contest that this is related to deployment, not code dependencies in the build. CC]
+- associate it with "bill of materials", but add more details than Maven BOM files [Referenced. CC]
+
+-->
+
+<h2 id="maturity-2-1">Maturity 2</h2>
+
+<h3 id="benefit-4">Benefit</h3>
+
+<h3 id="activity-4">Activity</h3>
+
+<p>Establish a whitelist of acceptable code dependencies that have been approved for use within a project or team, or within the wider organization. These libraries should be subjected to reasonable scrutiny in order to be included in the whitelist.</p>
+
+<p>Alternatively, introduce a central repository of approved dependencies that all software must be built from.</p>
+
+<p>Components should be regularly reviewed to ensure that:</p>
+
+<ul>
+<li>they remain correctly licensed</li>
+<li>no known and significant vulnerabilities are present</li>
+<li>the component is still supported and being actively maintained</li>
+<li>there is still a good business reason for the component to be included</li>
+</ul>
+
+<p>It may be necessary to utilize tools to automate some or all of this process, such as analyzing where the component is being used, or checking for updates via a package manager. Where available, consider using an automated tool to specifically scan for vulnerable dependencies.</p>
+
+<h3 id="maturity-questions-4">Maturity Questions</h3>
+
+<h4 id="q-1-4">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-4">Quality Indicators</h3>
+
+<!--
+#### Notes
+Difference with level 1 is not clear enough 
+Review being more thorough? 
+Tooling is practicaly required to do this, very hard to get to this maturity level manually [Changed toolong from "desirable" to "necessary". CC]
+Consider whitelisting/blacklisting [Added. CC]
+Consider a curated and controlled central repository for the build. [Added. CC]
+-->
+
+<h2 id="maturity-3-1">Maturity 3</h2>
+
+<h3 id="benefit-5">Benefit</h3>
+
+<h3 id="activity-5">Activity</h3>
+
+<p>Verification tests are performed against dependencies in the same way that they are against the target application itself. Refer to <a href="../v-security-testing">Verification &gt; Security Testing</a>. Depending on the build process maturity level, the discovery of significant issues might cause the build to fail.</p>
+
+<p>Results should be logged centrally and actioned appropriately. Vulnerable dependencies should be blacklisted and not permitted to be used during builds. Additionally, valid findings should be fed back to the vendor or open source project as appropriate, following a set of ethical disclosure guidelines.</p>
+
+<h3 id="maturity-questions-5">Maturity Questions</h3>
+
+<h4 id="q-1-5">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-5">Quality Indicators</h3>
+
+<!--
+#### Notes
+Add other verification activities as well. [Generalised the content in question. CC]
+-->
+
+
+<div class="ui section divider"></div>
+<footer class="ui container footer">
+  <div class="ui stackable grid">
+    <div class="ui three wide column">
+      <a href="https://www.owasp.org/"><img class="ui fluid image" src="/img/owasp.png" /></a>
+    </div>
+    <div class="ui thirteen wide column">
+      <h3 class="ui blue sub header">This is an OWASP Project</h3>
+      <p>OWASP is an international organization and the OWASP Foundation supports OWASP efforts around the world. OWASP is an open community dedicated to enabling organizations to conceive, develop, acquire, operate, and maintain applications that can be trusted. All of the OWASP tools, documents, forums, and chapters are free and open to anyone interested in improving application security. We advocate approaching application security as a people, process, and technology problem because the most effective approaches to application security include improvements in all of these areas. We can be found at <a href="https://www.owasp.org/">https://www.owasp.org/</a>.</p>
+    </div>
+  </div>
+  <div class="ui stackable grid">
+    <div class="ui three wide column">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img class="ui fluid image" src="/img/by-sa.png" /></a>
+    </div>
+    <div class="ui thirteen wide column">
+      <h3 class="ui blue sub header">CC BY-SA 4.0</h3>
+      <p>This work is licensed under the Creative Commons Attribution-Share Alike 4.0 License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>.</p>
+    </div>
+  </div>
+</footer>
+<script src="/js/semantic.min.js" data-no-instant></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" data-no-instant></script>
+<script src="/js/jquery.peity.min.js" data-no-instant></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.donut').peity('donut');
+  });
+</script>
+</body>
+</html>
+

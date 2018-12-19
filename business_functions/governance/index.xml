@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Governance on OWASP SAMM</title>
+    <link>https://owaspsamm.org/business_functions/governance/</link>
+    <description>Recent content in Governance on OWASP SAMM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://owaspsamm.org/business_functions/governance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Strategy &amp; Metrics</title>
+      <link>https://owaspsamm.org/core/governance/g-strategy-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/governance/g-strategy-metrics/</guid>
+      <description>Short Description Long Description Overview     A: Create and Promote B: Measure and Improve     Maturity 1 - Identify objectives and means of measuring effectiveness of the security program Identify organisation drivers as they relate to the organization&amp;rsquo;s risk tolerance Define metrics with insight into the effectiveness and efficiency of the Application Security Program   Maturity 2 - Establish a unified strategic roadmap for software security within the organization.</description>
+    </item>
+    
+    <item>
+      <title>Policy &amp; Compliance</title>
+      <link>https://owaspsamm.org/core/governance/g-policy-compliance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/governance/g-policy-compliance/</guid>
+      <description>Short Description Long Description The Policy &amp;amp; Compliance (PC) Practice is focused on understanding and meeting external legal and regulatory requirements while also driving internal security standards to ensure compliance in a way that’s aligned with the business purpose of the organization.
+A driving theme for improvement within this Practice is focused on describing organization&amp;rsquo;s standards and 3rd party obligations as application requirements, enabling efficient and automated audits that may be leveraged within the SDLC and continuously demonstrate that all expectations are being met.</description>
+    </item>
+    
+    <item>
+      <title>Education &amp; Guidance</title>
+      <link>https://owaspsamm.org/core/governance/g-education-guidance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/governance/g-education-guidance/</guid>
+      <description>Short Description Long Description The Education &amp;amp; Guidance (EG) Practice is focused on arming personnel involved in the software lifecycle with knowledge and resources to design, develop, and deploy secure software. With improved access to information, project teams will be better able to proactively identify and mitigate the specific security risks that apply to their organization.
+One major theme for improvement across the Objectives is providing training for employees and increasing their security awareness, either through instructor-led sessions or computer-based modules.</description>
+    </item>
+    
+  </channel>
+</rss>

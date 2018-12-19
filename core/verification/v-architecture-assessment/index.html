@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Architecture Assessment - OWASP SAMM</title>
+  
+  <meta name="description" content="Short Description Long Description Overview (updated objectives)     A: Architecture Validation B: Architecture Compliance     Maturity 1 - Review the architecture to ensure baseline mitigations are in place for known risks. Identify application and infrastructure architecture components Ad-hoc review of the architecture against compliance requirement   Maturity 2 - Review the complete provision of security mechanisms in the architecture Are the architecture security mechanisms well implemented Analyze the architecture against known security requirements and best practices   Maturity 3 - Review the architecture effectiveness and feedback results to improve the security architecture Review of the architecture components effectiveness Feedback the architecture review results into the enterprise architecture, organisation design principles &amp; patterns, security solutions and reference architectures    Original Overview     A: Application Architecture B: Supporting Architecture     Maturity 1 - Support ad-hoc reviews of software design to ensure baseline mitigations for known risks.">
+  <meta name="author" content="">
+  
+  <link href="/css/semantic.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+  <meta name="generator" content="Hugo">
+  
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" title="OWASP SAMM">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127457120-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127457120-1');
+  </script>
+</head>
+<body class="single">
+  <header class="ui container">
+    <h1 class="ui header">
+      <div class="content">
+        OWASP SAMM
+        <div class="sub header">Software Assurance Maturity Model</div>
+      </div>
+    </h1>
+  </header>
+  <main class="ui container">
+
+
+<h1 class="ui huge dividing header">
+  Architecture Assessment
+</h1>
+
+<div class="ui buttons">
+  <a href="/" class="ui green button"><i class="hand point left icon"></i> Back</button>
+  <a href="https://github.com/OWASP/samm/edit/master/v2.0/beta/core/verification/v-architecture-assessment.md" class="ui blue button"><i class="pencil icon"></i> Edit this page</a>
+</div>
+
+<div class="ui hidden divider"></div>
+
+<div class="ui large labels">
+  <div class="ui green label">
+    Business function
+    <div class="detail">Verification</div>
+  </div>
+  <div class="ui orange label">
+    Assigned to
+    <div class="detail">Seba (seba@owasp.org)</div>
+  </div>
+  
+  <div class="ui label">
+    Progress
+    <div class="detail"><span class="donut">0/100</span> 0%</div>
+  </div>
+  
+</div>
+
+
+
+<h1 id="short-description">Short Description</h1>
+
+<h1 id="long-description">Long Description</h1>
+
+<h1 id="overview-updated-objectives">Overview (updated objectives)</h1>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">A: Architecture Validation</th>
+<th align="left">B: Architecture Compliance</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Maturity 1 - Review the architecture to ensure baseline mitigations are in place for known risks.</td>
+<td align="left">Identify application and infrastructure architecture components</td>
+<td align="left">Ad-hoc review of the architecture against compliance requirement</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 2 - Review the complete provision of security mechanisms in the architecture</td>
+<td align="left">Are the architecture security mechanisms well implemented</td>
+<td align="left">Analyze the architecture against known security requirements and best practices</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 3 - Review the architecture effectiveness and feedback results to improve the security architecture</td>
+<td align="left">Review of the architecture components effectiveness</td>
+<td align="left">Feedback the architecture review results into the enterprise architecture, organisation design principles &amp; patterns, security solutions and reference architectures</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="original-overview">Original Overview</h1>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">A: Application Architecture</th>
+<th align="left">B: Supporting Architecture</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Maturity 1 - Support ad-hoc reviews of software design to ensure baseline mitigations for known risks.</td>
+<td align="left">Analyze application architecture against known security requirements and security best practices</td>
+<td align="left">Analyze supporting architecture against known security requirements and best practices</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 2 - Offer assessment services to review software design against comprehensive best practices for security.</td>
+<td align="left">Standardized approach for complete provision review of security mechanisms in application architecture</td>
+<td align="left">Standardized approach for complete provision review of security mechanisms in the supporing architecture</td>
+</tr>
+
+<tr>
+<td align="left">Maturity 3 - Require assessments and validate artifacts to develop detailed understanding of protection mechanisms.</td>
+<td align="left">Review of the application architecture impact on overall enterprise architecture and against the organisation design principles, design patterns, security solutions and reference architectures</td>
+<td align="left">Review of the supporting architecture impact on overall enterprise architecture and against the organisation design principles, design patterns, security solutions and reference architectures</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Notes</strong>
+* <strong>Combine both streams into 1 (positive side of review). Create a new one (negative side of review) to focus on verifying that assumptions in the design (e.g. threat assessments) are still meeting the functionality of the application. Can also include activities included in an app’s risk profile.</strong>
+  * Thers is a risk that the A stream will contain far more content than the B stream.</p>
+
+<h1 id="a-architecture-validation">A: Architecture Validation</h1>
+
+<h2 id="maturity-1">Maturity 1</h2>
+
+<h3 id="benefit">Benefit</h3>
+
+<h3 id="activity">Activity</h3>
+
+<p>Identify application and infrastructure architecture components. Create a simplified view of the overall architecture. Typically, this should be created based on project artifacts such as high-level requirements and design documents, interviews with technical staff, or module-level review of the code base.
+Also identify the infrastructure components. These are all the systems, components and libraries (including SDKs) that are not specific to the application, but provide direct support to use or manage the application(s) in the organisation.
+From the architecture view, analyze each component in terms of accessibility of the interfaces from authorized users, anonymous users, operators, application-specific roles, etc.
+For each interface note any security-related functionality and check the model for design-level consistency for how interfaces with similar access are secured. Any breaks in consistency can be noted as assessment findings.</p>
+
+<h4 id="maturity-questions">Maturity Questions</h4>
+
+<h5 id="q-1">Q 1</h5>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators">Quality indicators</h3>
+
+<h4 id="notes">Notes</h4>
+
+<p>Use of checklists
+Review the design choices in each of the key vulnerability categories defined by the security frame.</p>
+
+<p>Supporting architecture are all the systems, components and libraries (including SDKs) that are not specific to the application, but provide direct support to use or manage the application(s) in the organisation.
+Examples:
+build / deployment systems
+0auth, SSO, LDAP, ADFS, IAM, Firebase Authentication, &hellip;
+Web services, application services/framework (e.g. .NET framework), middleware, ESBs, &hellip;
+(Cloud) Storage, Backup
+Analytics, Monitoring,
+(cloud) acceleration, load balancing, WAF, (D)DOS protection
+Does this include connectivity, networking, OS (?)</p>
+
+<p>remarks:
+by combining application and supporting architecture, we can introduce an extra activity stream
+threat modeling as a verification activity versus design?</p>
+
+<p>references:
+<a href="https://www.owasp.org/index.php/How_to_perform_a_security_architecture_review_at_Level_1">https://www.owasp.org/index.php/How_to_perform_a_security_architecture_review_at_Level_1</a>
+<a href="https://www.owasp.org/index.php/ASVS_V1_Architecture">https://www.owasp.org/index.php/ASVS_V1_Architecture</a>
+<a href="http://www.guidanceshare.com/wiki/Security_Engineering_Explained_-_Chapter_5_-_Security_Architecture_and_Design_Review">http://www.guidanceshare.com/wiki/Security_Engineering_Explained_-_Chapter_5_-_Security_Architecture_and_Design_Review</a></p>
+
+<h2 id="maturity-2">Maturity 2</h2>
+
+<h3 id="benefit-1">Benefit</h3>
+
+<h3 id="activity-1">Activity</h3>
+
+<p>Are the architecture security mechanisms well implemented.
+For each interface in the application and infrastructure architecture , formally iterate through the list of security mechanisms and analyze the system for their provision. This type of analysis should be performed on both internal interfaces, e.g. between tiers, as well as external ones, e.g. those comprising the attack surface.</p>
+
+<p>The six main security mechanisms to consider are authentication, authorization, input validation, output encoding, error handling and logging. Where relevant, also consider the mechanisms of cryptography or privacy. For each interface, determine where in the system design each mechanism is provided and note any missing or unclear features as findings.</p>
+
+<p>This analysis should be conducted by security-savvy staff with assistance from the project team for application-specific knowledge. This analysis should be performed once per release, usually toward the end of the design phase. After initial analysis, subsequent releases are required to update the findings based on changes being made during the development cycle.</p>
+
+<h3 id="maturity-questions-1">Maturity Questions</h3>
+
+<h4 id="q-1-1">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-1">Quality Indicators</h3>
+
+<h4 id="notes-1">Notes</h4>
+
+<ul>
+<li>expose the high-risk design decisions that have been made</li>
+<li>Remove “well implemented” from maturity 2. Move it more into 3 to increase the difference between the 2 levels.</li>
+<li>remove/adapt list of 6 in maturity 2. Perhaps add user/access management.</li>
+<li>Architecture review should be performed once per release is not CICD friendly. Need to establish what a release is. Or reword.</li>
+</ul>
+
+<h2 id="maturity-3">Maturity 3</h2>
+
+<h3 id="benefit-2">Benefit</h3>
+
+<h3 id="activity-2">Activity</h3>
+
+<p>Review of the architecture components effectiveness. For each of the application and infrastructure components, review their effectiveness to secure the application.
+Effectiveness should be evaluated for the security mechanisms provided by the components in terms of identification, protection, detection, response and recovery of security or privacy issues. Review their effectiveness in terms of strategy alignment, appropriate support and scaleability.
+Any findings should feedback into the Security Architecture practice.</p>
+
+<h3 id="maturity-questions-2">Maturity Questions</h3>
+
+<h4 id="q-1-2">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-2">Quality Indicators</h3>
+
+<h4 id="notes-2">Notes</h4>
+
+<h1 id="b-architecture-compliance">B: Architecture Compliance</h1>
+
+<p><strong>Notes</strong>
+* <strong>This will be rewritten. See notes section at the top of the practice</strong></p>
+
+<h2 id="maturity-1-1">Maturity 1</h2>
+
+<h3 id="benefit-3">Benefit</h3>
+
+<h3 id="activity-3">Activity</h3>
+
+<p>Ad-hoc review of the architecture against compliance requirement.</p>
+
+<p>Compliance requirements, either formally identified or informally known, should be identified and collected.</p>
+
+<p>Review each item on the list of known compliance requirements against the architecture. Elaborate the analysis to show the design-level features that address each compliance requirement. The overall goal is to verify that each known compliance requirement has been addressed by the system design. Any compliance requirements that are not clearly provided at the design level should be noted as assessment findings.</p>
+
+<p>This analysis should be conducted by security-savvy technical staff with input from architects, developers, managers, and business owners as needed. It should be updated during the design phase when there are changes in compliance requirements or high-level system design.</p>
+
+<h3 id="maturity-questions-3">Maturity Questions</h3>
+
+<h4 id="q-1-3">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-3">Quality Indicators</h3>
+
+<h4 id="notes-3">Notes</h4>
+
+<h2 id="maturity-2-1">Maturity 2</h2>
+
+<h3 id="benefit-4">Benefit</h3>
+
+<h3 id="activity-4">Activity</h3>
+
+<p>Analyze the architecture against known security requirements and best practices.</p>
+
+<p>Security requirements, either formally identified or informally known, should be identified and collected. Additionally, identify and include any security assumptions upon which safe operation of the system relies.</p>
+
+<p>Review each item on the list of known security requirements against the architecture. Elaborate the analysis to show the design-level features that address each security requirement. Separate, detailed analysis iterations can be performed on parts of the architecture to simplify capturing this information if the system is large and/or complex. The overall goal is to verify that each known security requirement has been addressed by the system design. Any security requirements that are not clearly provided at the design level should be noted as assessment findings.</p>
+
+<p>This analysis should be conducted by security-savvy technical staff with input from architects, developers, managers, and business owners as needed. It should be updated during the design phase when there are changes in security requirements or high-level system design.</p>
+
+<h3 id="maturity-questions-4">Maturity Questions</h3>
+
+<h4 id="q-1-4">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-4">Quality Indicators</h3>
+
+<h4 id="notes-4">Notes</h4>
+
+<h2 id="maturity-3-1">Maturity 3</h2>
+
+<h3 id="benefit-5">Benefit</h3>
+
+<h3 id="activity-5">Activity</h3>
+
+<p>Feedback the architecture review results into the enterprise architecture, organisation design principles &amp; patterns, security solutions and reference architectures.</p>
+
+<p>Map security features to the security and compliance requirements in a traceability matrix.
+Gaps in the security assessment should be reviewed for root cause and remediated. Recurring architecture findings should be considered as input for the security architecture practice to update the enterprise architecture, organisation design principles &amp; patterns, security solutions and reference architectures.</p>
+
+<h3 id="maturity-questions-5">Maturity Questions</h3>
+
+<h4 id="q-1-5">Q 1</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</p>
+
+<p><strong>Answer Options</strong>
+- Option 1
+- Option 2
+- Option 3
+- Option 4</p>
+
+<h3 id="quality-indicators-5">Quality Indicators</h3>
+
+
+<div class="ui section divider"></div>
+<footer class="ui container footer">
+  <div class="ui stackable grid">
+    <div class="ui three wide column">
+      <a href="https://www.owasp.org/"><img class="ui fluid image" src="/img/owasp.png" /></a>
+    </div>
+    <div class="ui thirteen wide column">
+      <h3 class="ui blue sub header">This is an OWASP Project</h3>
+      <p>OWASP is an international organization and the OWASP Foundation supports OWASP efforts around the world. OWASP is an open community dedicated to enabling organizations to conceive, develop, acquire, operate, and maintain applications that can be trusted. All of the OWASP tools, documents, forums, and chapters are free and open to anyone interested in improving application security. We advocate approaching application security as a people, process, and technology problem because the most effective approaches to application security include improvements in all of these areas. We can be found at <a href="https://www.owasp.org/">https://www.owasp.org/</a>.</p>
+    </div>
+  </div>
+  <div class="ui stackable grid">
+    <div class="ui three wide column">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img class="ui fluid image" src="/img/by-sa.png" /></a>
+    </div>
+    <div class="ui thirteen wide column">
+      <h3 class="ui blue sub header">CC BY-SA 4.0</h3>
+      <p>This work is licensed under the Creative Commons Attribution-Share Alike 4.0 License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>.</p>
+    </div>
+  </div>
+</footer>
+<script src="/js/semantic.min.js" data-no-instant></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" data-no-instant></script>
+<script src="/js/jquery.peity.min.js" data-no-instant></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.donut').peity('donut');
+  });
+</script>
+</body>
+</html>
+

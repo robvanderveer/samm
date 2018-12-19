@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on OWASP SAMM</title>
+    <link>https://owaspsamm.org/business_functions/design/</link>
+    <description>Recent content in Design on OWASP SAMM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://owaspsamm.org/business_functions/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Threat Assessment</title>
+      <link>https://owaspsamm.org/core/design/d-threat-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/design/d-threat-assessment/</guid>
+      <description>Short Description Long Description The Threat Assessment (TA) practice is focused on accurately identifying and understanding potential attacks upon an organisation&amp;rsquo;s software in order to better understand the risks and facilitate risk management. Indeed, software assurance is all about identifying risks in applications and treating them accordingly.
+Risks to an application can be relative to the business of the application (think about business logic attacks) or to the technical setup of the application.</description>
+    </item>
+    
+    <item>
+      <title>Security Requirements</title>
+      <link>https://owaspsamm.org/core/design/d-security-requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/design/d-security-requirements/</guid>
+      <description>Short Description Long Description This security practice focuses on security requirements that are important in the context of secure software. A first type of requirements deals with typical software-related requirements, to specify concrete objectives and expectations to protect the service and data that form the core of the application. A second type of requirements deals with requirements that are relative to supplier organisations that are part of the development context of the application, in particular for outsourced development.</description>
+    </item>
+    
+    <item>
+      <title>Security Architecture</title>
+      <link>https://owaspsamm.org/core/design/d-security-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://owaspsamm.org/core/design/d-security-architecture/</guid>
+      <description>Short Description Long Description This security practice focuses on the security linked to components and technology dealt with during the architectural design of your software solutions. Secure Architecture Design looks at (the selection and composition of) components that form the foundation of the solution that you&amp;rsquo;re building, with a particular focus on the security properties hereof. Technology management on the other hand looks at the security of supporting technologies that are used during development, deployment and operations, such as development stacks and tooling, deployment tooling, operating systems and tooling, etc.</description>
+    </item>
+    
+  </channel>
+</rss>
